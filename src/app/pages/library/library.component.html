@@ -1,0 +1,39 @@
+<section class="page-grid">
+  <article class="storybook-card">
+    <div class="card-inner heading">
+      <div>
+        <h1>Library</h1>
+        <p class="muted">Check out all of the books below to see what the baby already has in its library.</p>
+      </div>
+      <img class="inline-vignette" src="images/doorknock.png" alt="" />
+    </div>
+  </article>
+  <article class="storybook-card">
+    <div class="card-inner">
+      @if (loadError(); as errorMessage) {
+        <p class="status-message">{{ errorMessage }}</p>
+      } @else {
+        <div class="book-grid">
+          @for (book of books(); track book.coverfilename) {
+            <article class="storybook-card nested-card book-card">
+              <div class="card-inner item-layout">
+                @if (book.coverfilename) {
+                  <img
+                    class="cover"
+                    [src]="'images/bookcovers/' + book.coverfilename"
+                    [alt]="book.name + ' cover'"
+                  />
+                }
+                <div class="item-details">
+                  <h2>{{ book.name }}</h2>
+                  <p>By {{ book.author }}</p>
+                </div>
+              </div>
+            </article>
+          }
+        </div>
+      }
+      <img class="standalone-vignette" src="images/pop.png" alt="" />
+    </div>
+  </article>
+</section>

@@ -1,0 +1,54 @@
+.heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+}
+
+.book-grid .nested-card {
+  background-color: transparent;
+}
+
+.book-card .card-inner {
+  padding: 1rem 0;
+}
+
+.item-layout {
+  align-items: center;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 2rem;
+}
+
+.cover {
+  width: 100px;
+  max-height: 100px;
+  object-fit: contain;
+  border-radius: 8px;
+  mix-blend-mode: multiply;
+}
+
+.item-details {
+  display: grid;
+  gap: 0.5rem;
+}
+
+h2 {
+  font-size: 1.4rem;
+}
+
+.status-message {
+  color: #723d2f;
+}
+
+@media (min-width: 720px) {
+  .book-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .cover {
+    width: 200px;
+    max-height: 200px;
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "books": [
+    {
+      "name": "Dog's First Baby",
+      "coverfilename": "dogs-first-baby.jpg",
+      "author": "Natalie Nelson"
+    },
+    {
+      "name": "Frog and Toad: Two Together",
+      "coverfilename": "frog-and-toad-two-together.png",
+      "author": "Arnold Lobel"
+    },
+    {
+      "name": "Mei Mei the Bunny",
+      "coverfilename": "mei-mei-the-bunny.png",
+      "author": "Laufey"
+    },
+    {
+      "name": "Winnie the Pooh: The Complete Collection",
+      "coverfilename": "winnie-the-pooh-the-complete-collection.png",
+      "author": "A. A. Milne"
+    },
+    {
+      "name": "Madeline",
+      "coverfilename": "madeline.jpeg",
+      "author": "Ludwig Bemelmans"
+    },
+    {
+      "name": "Wherever You Go",
+      "coverfilename": "wherever-you-go.png",
+      "author": "Pat Zietlow Miller"
+    },
+    {
+      "name": "My First Winnie-the-Pooh",
+      "coverfilename": "my-first-winnie-the-pooh.png",
+      "author": "A. A. Milne"
+    },
+    {
+      "name": "Hello, My World",
+      "coverfilename": "hello-my-world.png",
+      "author": "Jannie Ho"
+    },
+    {
+      "name": "That's not my lamb",
+      "coverfilename": "thats-not-my-lamb.jpg",
+      "author": "Fiona Watt"
+    },
+    {
+      "name": "I've Got a Dog",
+      "coverfilename": "ive-got-a-dog.jpg",
+      "author": "Sandra Boynton"
+    }
+  ]
+}

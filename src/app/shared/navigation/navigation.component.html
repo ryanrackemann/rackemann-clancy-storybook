@@ -1,0 +1,20 @@
+<header class="storybook-card top-nav">
+  <div class="card-inner nav-inner">
+    <a class="brand" routerLink="/">
+      <span class="material-symbols-outlined">book_ribbon</span>
+      The Rackemann-Clancy Storybook
+    </a>
+    <nav class="nav-links" aria-label="Main navigation">
+      @for (link of navLinks; track link.path) {
+        <a
+          class="nav-link"
+          [routerLink]="link.path"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+        >
+          {{ link.label }}
+        </a>
+      }
+    </nav>
+  </div>
+</header>
