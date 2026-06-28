@@ -1,4 +1,4 @@
-# Baby
+# Storybook
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 22.0.4.
 
@@ -35,6 +35,20 @@ ng build
 ```
 
 This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+
+## Deploying to GitHub Pages
+
+This project is configured for a project page at:
+
+`https://ryanrackemann.github.io/rackemann-clancy-storybook/`
+
+Use:
+
+```bash
+npm run deploy
+```
+
+The deploy target builds with the correct GitHub Pages base href and publishes `dist/storybook/browser` to the `gh-pages` branch.
 
 ## Running unit tests
 

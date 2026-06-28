@@ -2,7 +2,7 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Run Baby App",
+      "name": "Run storybook",
       "type": "chrome",
       "request": "launch",
       "preLaunchTask": "npm: start",

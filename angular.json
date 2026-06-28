@@ -6,7 +6,7 @@
   },
   "newProjectRoot": "projects",
   "projects": {
-    "baby": {
+    "storybook": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -29,12 +29,11 @@
                 "input": "public"
               }
             ],
-            "styles": [
-              "src/styles.scss"
-            ]
+            "styles": ["src/styles.scss"]
           },
           "configurations": {
             "production": {
+              "baseHref": "/rackemann-clancy-storybook/",
               "budgets": [
                 {
                   "type": "initial",
@@ -61,16 +60,25 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "baby:build:production"
+              "buildTarget": "storybook:build:production"
             },
             "development": {
-              "buildTarget": "baby:build:development"
+              "buildTarget": "storybook:build:development"
             }
           },
           "defaultConfiguration": "development"
         },
         "test": {
           "builder": "@angular/build:unit-test"
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "buildTarget": "storybook:build:production",
+            "branch": "gh-pages",
+            "dir": "dist/storybook/browser",
+            "baseHref": "/rackemann-clancy-storybook/"
+          }
         }
       }
     }
