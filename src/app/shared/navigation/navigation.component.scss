@@ -6,20 +6,23 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
   gap: 1rem;
   flex-wrap: wrap;
 }
 
 .brand {
   display: inline-flex;
-  align-items: center;
+  align-items: start;
   gap: 0.5rem;
   text-decoration: none;
   color: var(--ink-strong);
   font-family: var(--font-heading);
   font-size: 2rem;
   transition: text-shadow 0.2s ease;
+}
+
+.brand .material-symbols-outlined {
+  margin-top: .25rem;
 }
 
 .brand:hover {

@@ -102,8 +102,8 @@ a {
 }
 
 .inline-vignette {
-  max-height: 200px;
-  max-width: 200px;
+  max-height: 400px;
+  max-width: 300px;
   opacity: 0.5;
   mix-blend-mode: multiply;
 }
@@ -272,7 +272,6 @@ a {
     max-width: min(34vw, 320px);
   }
   .inline-vignette {
-    max-height: 400px;
     max-width: 400px;
   }
   .media-row {

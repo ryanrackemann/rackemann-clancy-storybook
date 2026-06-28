@@ -33,7 +33,7 @@
           },
           "configurations": {
             "production": {
-              "baseHref": "/rackemann-clancy-storybook/",
+              "baseHref": "/",
               "budgets": [
                 {
                   "type": "initial",
@@ -77,7 +77,8 @@
             "buildTarget": "storybook:build:production",
             "branch": "gh-pages",
             "dir": "dist/storybook/browser",
-            "baseHref": "/rackemann-clancy-storybook/"
+            "baseHref": "/",
+            "cname": "www.rackemann-clancy.com"
           }
         }
       }

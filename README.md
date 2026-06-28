@@ -38,9 +38,9 @@ This will compile your project and store the build artifacts in the `dist/` dire
 
 ## Deploying to GitHub Pages
 
-This project is configured for a project page at:
+This project is configured for a custom domain at:
 
-`https://ryanrackemann.github.io/rackemann-clancy-storybook/`
+`https://www.rackemann-clancy.com/`
 
 Use:
 
